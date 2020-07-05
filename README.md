@@ -33,6 +33,7 @@ func LuckyPredicate(pod *v1.Pod, node v1.Node) (bool, []string, error) {
   ```
   prioritize沿用了助教给出的模板，在最⼤优先级内随机取⼀个值。
   ```
+  //打分函数
   func prioritize(args schedulerapi.ExtenderArgs) *schedulerapi.HostPriorityList {
 	  pod := args.Pod
 	  nodes := args.Nodes.Items
