@@ -2,7 +2,7 @@
 # Extender的工作逻辑
   整个程序的文件组织基本参照了助教给的模板，只在调度器的业务逻辑（是否应该批准该节点）处进行了修改。
 ## main.go
-  main.go负责接收请求和初始随机数种子，并按照请求的url执行Filter和Prioritize
+  main.go负责接收请求和初始随机数种子，并按照请求的url执行Filter和Prioritize。
   ```
 func init() {
 	rand.Seed(time.Now().UTC().UnixNano())
